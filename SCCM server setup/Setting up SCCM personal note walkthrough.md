@@ -72,7 +72,11 @@ My DC kept shutting off and i think it was because my eval license expired so i 
     
     ![image.png](image%208.png)
     
-15. 
+15. Also we need to create subnet in Active directory sites and services for MECM in the future. Go to AD Sites and Services. Go to Subnets and right click to create new subnet
+    
+    ![image.png](./image51.png)
+    
+16. Make the prefix the network address and subnet in X.X.X.X/## format and select the default site name
 
 ### SCCM server set up
 
