@@ -1,8 +1,4 @@
-# onfiguring MECM & First Managed Device
-
-![image.png](image.png)
-
-![image.png](image%201.png)
+# Configuring MECM & First Managed Device
 
 ### Setting up a Discovery Method
 
