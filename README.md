@@ -11,7 +11,7 @@ I'm an aspiring sysadmin trying to teach myself how to execute an SCCM-to-Intune
 
 ```
 DC:     Windows Server 2022 — Active Directory, DNS — 10.0.0.1
-SCCM   Windows Server 2022 — MECM + SQL Server, Site Code: LAB — 10.0.0.2
+SCCM   Windows Server 2022 — MECM + SQL Server, Site Code: LAB — 10.0.0.2 (Interal and NAT adapters)
 Client01 Windows 11 Pro — domain joined, MECM client installed — 10.0.0.20
 Client02 Windows 11 Pro — domain joined, MECM client NOT installed — 10.0.0.25
 ```
@@ -24,7 +24,7 @@ All VMs running on a single Mini PC. An Elite desk that I upgraded to have 32 GB
 |-----|--------------|
 | [SCCM Server Setup](SCCM%20server%20setup/Setting%20up%20SCCM%20personal%20note%20walkthrough.md) | Domain, SQL Server, prerequisites, MECM install |
 | [First Managed Device](Configuring%20MECM%20&%20First%20Managed%20Device/Configuring%20MECM%20&%20First%20Managed%20Device.md) | Discovery, boundaries, client push |
-| [Managing Devices](Managing%20Device%20with%20MECM/Managing%20Device%20with%20MECM.md) | Collections, harware inventory, app deployment |
+| [Managing Devices](Managing%20Device%20with%20MECM/Managing%20Device%20with%20MECM.md) | Collections, harware inventory, app deployment |[Updating Devices](/Software%20Updates%20in%20MECM/Software%20Updates.md) | Software Update Role, Software Update Groups, Deployment Package|
 
 ## What's Been Built so Far
 
@@ -38,6 +38,7 @@ The MECM foundation is complete:
 - Device collections: All Managed Clients, Windows 11 Devices, Pilot Ring
 - Silent app deployments: 7-Zip (MSI) and Notepad++ (EXE with registry detection) — both confirmed working
 - Hardware inventory running and validated via Resource Explorer
+- Software Update Groups for Deployment Packages
 
 ---
 
@@ -50,5 +51,9 @@ The MECM foundation is complete:
 **GPO everything from day one.** WMI rules, local admin rights for the service account. Do it via GPO so every future device is ready automatically.
 
 **Check your eval license.** If your DC randomly stops working, run `slmgr /xpr`. Learned this one the hard way.
+
+**Run Synchronization Twice.** WSUS synchronization for Software Update Point needs to be run an inital time for discovery of Windows 11 product content
+
+**Read Logs.** Logs are the key to understanding all issues with software and app deployments.
 
 
