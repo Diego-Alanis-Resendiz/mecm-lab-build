@@ -24,7 +24,8 @@ All VMs running on a single Mini PC. An Elite desk that I upgraded to have 32 GB
 |-----|--------------|
 | [SCCM Server Setup](SCCM%20server%20setup/Setting%20up%20SCCM%20personal%20note%20walkthrough.md) | Domain, SQL Server, prerequisites, MECM install |
 | [First Managed Device](Configuring%20MECM%20&%20First%20Managed%20Device/Configuring%20MECM%20&%20First%20Managed%20Device.md) | Discovery, boundaries, client push |
-| [Managing Devices](Managing%20Device%20with%20MECM/Managing%20Device%20with%20MECM.md) | Collections, harware inventory, app deployment |[Updating Devices](/Software%20Updates%20in%20MECM/Software%20Updates.md) | Software Update Role, Software Update Groups, Deployment Packages|
+| [Managing Devices](Managing%20Device%20with%20MECM/Managing%20Device%20with%20MECM.md) | Collections, harware inventory, app deployment |
+| [Updating Devices](/Software%20Updates%20in%20MECM/Software%20Updates.md) | Software Update Role, Software Update Groups, Deployment Packages|
 
 ## What's Been Built so Far
 
